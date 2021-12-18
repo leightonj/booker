@@ -4,7 +4,6 @@
   {
     id: room.id,
     name: room.name,
-    description: room.description,
     type: room.type,
     num_guests: room.num_guests,
     beds_single: room.beds_single,
