@@ -7,6 +7,7 @@ ruby '3.0.3'
 
 gem 'bootsnap', require: false
 gem 'faker'
+gem 'jb'
 gem 'mongoid', git: 'git@github.com:leightonj/mongoid.git'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.0'
@@ -17,9 +18,13 @@ gem 'rails', '~> 7.0.0'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+end
+
+group :test do
   gem 'factory_bot'
   gem 'rspec-rails', '~> 5.0.0'
   gem 'rubocop-rspec', require: false
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
