@@ -1,0 +1,1 @@
+rails g scaffold Room name description type num_guests beds_single beds_double

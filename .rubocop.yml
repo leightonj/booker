@@ -2,3 +2,11 @@ require: rubocop-rails
 
 AllCops:
   NewCops: enable
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/requests/*
+
+Style/Documentation:
+  Exclude:
+    - app/controllers/*
